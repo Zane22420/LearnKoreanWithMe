@@ -1,246 +1,352 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Abbie & Zane Learn Korean</title>
-		
-		<style>
-			body {
-				background-color: pink;
-			}
-			
-			img {
-				width: 30em;
-			}
-			#page-title {
-				background-color: grey;
-				text-align: center;
-				padding: 1em;
-			}
-			
-			#conversation {
-				padding-top: 1em;
-				padding-bottom: 1em;
-			}
-			
-			.철수 {
-				background-color: rgba(20,20,20,0.1);
-			}
-			
-			.영희 {
-				background-color: rgba(50,50,50,0.3)
-			}
-			
-			.example {
-				background-color: rgba(50,50,50,0.3);
-				text-align: center;
-			}
-			
-			.subtitle {
-				text-align: center;
-				background-color: grey;
-			}
-			
-			.border {
-				border-style: solid;
-				border-width: 5px;
-				border-color: rgba(70,70,70,1);
-			}
-		</style>
-	</head>
-	<body>
-		<div id="page-title">
-			<h1>Chapter 4: Conversation</h1>
-			<h3 style="color: white;"> My god, Abbie, this took forever. I hope it's useful.</h3>
-		</div>
-		
-		<div id="page-contents"> 
-			<div id="conversation">
-				<img src="data:image/jpeg;base64,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">
-				<h2 class="철수"><strong style="color: rgb(248, 24, 148);">김철수:</strong>	저는 아르바이트를 원합니다.</h2>
-				<h2 class="영희"><strong style="color: rgb(248, 24, 148);">김영희:</strong>	저도 아르바이트를 원합니다.</h2>
-				<h2 class="철수"><strong style="color: rgb(248, 24, 148);">김철수:</strong>	하지만 일을 워하지 않습니다. 돈만 원합니다.</h2>
-				<h2 class="영희"><strong style="color: rgb(248, 24, 148);">김영희:</strong>	저도 일하고 싶지 않습니다. 게임읗 하고 습니다. </h2>
-				<h2 class="철수"><strong style="color: rgb(248, 24, 148);">김철수:</strong>	저도 게임을 하고 싶습니다. 하지민 돈도 벌고 싶습니다.</h2>
-				
-			</div>
-				<hr>
-			<div id="chapter-four-explanation">
-				<div id="two-wants">
-					<hr>
-					<h2 id= "two-wants-header" class="subtitle"> Want + Noun <strong>vs.</strong> Want + Verb</h2>
-					<hr>
-					<p id="two-wants-body-1"> Korean has two ways to say "want" - Which one you use depends on whether it precedes a
-					verb or a noun. </p>
-					<div class="example">
-						<h2 id="ch4-noun-exapmle-korean">저는 책을 원합니다</h2>
-						<h3 id="ch4-noun-example-english">"I want a book."</h3>
-						<h2 id="ch4-verb-exapmle-korean">저는 책을 받고 싶습니다.</h2>
-						<h3 id="ch4-verb-example-english">"I want to use a book"</h3>
-					</div>
-					<p id="two-wants-body-2">The difference between the two is that the first uses just a nown -"I want a book." The second
-					incorporates another verb in the clause- "to use" </p>
-
-					<p id="two-wants-review"> Let's go over both of these.</p>
-					<hr>
-					<div class="subtitle">
-						<h2 id="want-noun">"Want a thing":  Noun + (을/를) 원합니다.</h2>
-						<h2 id="dont-want-noun">"Don't Want a thing": Noun + (을/를) 원하지 않습니다.</h2>
-					</div>
-					<hr>
-					<p id="want-noun-explanation"> When you want to express that you want something, take the noun and attach the <em>Object Maker</em>.
-					Then add 원헙니다</p>
-					<div class="example">
-						<h2 id="ch4-noun-exapmle-korean-2">저는 음식을 원헙니다</h2>
-						<h2 id="ch4-noun-example-english-2">"I want food"</h2>
-						<h2 id="ch4-noun-exapmle-korean-3">저는 연필을 원헙니다</h2>
-						<h2 id="ch4-noun-example-english-3">"I want a pencil"</h2>
-					</div>
-					<p id="dont-want-explanation"> The opposite can be expressed using 원하지 않습니다.</p>
-					<div class="example">
-						<h2 id="ch4-noun-exapmle-korean-4">저는 야채를 원하지 않습니다.</h2>
-						<h2 id="ch4-noun-example-english-4">"I don't want vegetables."</h2>
-						<h2 id="ch4-noun-exapmle-korean-5">저는 돈을 원하지 않습니다. 사랑을 원합니다.</h2>
-						<h2 id="ch4-noun-example-english-5">"I don't want money. I want love."</h2>
-					</div>
-					<hr>
-					<div class="subtitle">
-						<h2 id="want-verb">"I want to do": Verb Stem + 고싶습니다.</h2>
-						<h2 id="dont-want-verb">"I don't want to do": Verb Stem + 고싶지 않습니다.</h2>
-					</div>
-					<hr>
-					<p> When you want to express that you want <em>to do</em> something, take the <strong>Verb Stem</strong> and attach 고. Then add
-					싶습니다.</p>
-					<div class="border">
-						<div class="subtitle">
-							<h2>What is a Verb Stem ?</h2>
-						</div>
-						<hr>
-						<p>Getting a verb stem is super simple. Just take a verb and remove the 다, and you have the verb stem</p>
-						<div class="example">
-							<h2>하다</h2>
-							<h2>-> 하</h2>
-							<h2>벌다</h2>
-							<h2>-> 벌</h2>
-							<h2>막다</h2>
-							<h2>-> 막</h2>
-						</div>
-					</div>
-					<p>Some examples for "want <em>to do</em> something:</p>
-					<div class="example">
-						<h2>저는 과일응 먹고 깊습니다.</h2>
-						<h2>"I want to eat fruit"<h2>
-						<h2>저는 돈을 벌고 싶습니다.</h2>
-						<h2>"I want to earn money"</h2>
-					</div>
-					<p>The opposite would be made by using 고 싶지 않습니다.</p>
-					<div class="example">
-						<h2>저는 야채를 먹고 싶지 않습니다.</h2>
-						<h2>"I don't want to eat vegetables."</h2>
-						<h2>저는 죽고 싶지 않습니다.</h2>
-						<h2>"I don't want to die."</h2>
-						<h2>저는 웃고 싶지 않습니다.</h2>
-						<h2>"I don't want to laugh."</h2>
-					</div>
-					<hr>
-					<p><strong>Remember</remember>, if you're expressing that you want <em>to do </em> something, use 고 싶습니다.
-					If you're expressing that you want an object, use 원합니다.</p>
-					<div class="example">
-						<h3>Want + Verb: Verb Stem + 고 싶습니다.</h3>
-						<h3>Want + Noun: Noun <em>(Don't forget the object particle)</em> + 원합니다.</h3>
-					</div>
-				</div>
-				<hr>
-				<hr>
-				<div id="polite-want">
-					<div class="subtitle">
-						<h2 id="polite want intro">"I want" as in "Please give me..."</h2>
-						<h2> Noun + (을/를) 주세요</h2>
-					</div>
-					<hr>
-					<img src="data:image/jpeg;base64,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">
-					<p>In order to request after something politely, say <em>what you want</em> followed by the Object Marker and then add 
-					주세요</p>
-					<div class="example">
-						<h2>돈을 주세요.</h2>
-						<h3>"Please give me money."</h3>
-						<h2>힌트를 주세요.</h2>
-						<h3>"Please give me a hint."</h3>
-						<h2>책을 주세요.</h2>
-						<h3>"Please give me a book.</h3>
-					</div>
-				</div>
-				<div id="conversation-explanation">
-					<p>Now that we've learned some important grammar rules, let's read over the conversation.</p>
-					<div class="example">
-						<h2 class="철수"><strong style="color: rgb(248, 24, 148);">김철수:</strong>	저는 아르바이트를 원합니다.</h2>
-						<h3>"I want a part-time job."</h3>
-					</div>
-					<hr>
-					<div class="example">
-						<h2 class="영희"><strong style="color: rgb(248, 24, 148);">김영희:</strong>	저도 아르바이트를 원합니다.</h2>
-						<h3>"I want a part-time job too."</h3>
-					</div>
-					<p>In this sentence, we use the word 저 with the particle 도. Together, they mean "I also" or "Me too"</p>
-					<hr>
-					<div id="도-explained" class="border">
-						<div class="subtitle">
-							<h2>The Particle 도</h2>
-						</div>
-						<hr>
-						<p>Notice how the particle 도 takes the place of 는 in the above sentence. Saying 저도는 would be incorrect. 도 replaces whatever particle would normally
-						be there, <em>(but not all of them, as we'll learn later)</em></p>
-						<p> </p>
-						<p>도, like any other particle, follows directly after a word <em>(No Spaces!)</em>. It means "also," "even," or "too."</p>
-						<div class="example">
-							<h2>저<strong style="color: red;">도</strong> 김치를 좋아헙니다.</h2>
-							<h3>"I also like kimchi." <em>(Other people might also like kimchi!)</em></h3>
-							<h2>저는 김치<strong style="color: red;">도</strong> 좋아합니다.</h2>
-							<h3>"I also like kimchi" <em>(I might also like other things!)</em></h3>
-						</div>
-						<p>Take note of the subtle change in meaning based on the placement of the particle. 도 emphasizes the word it follows.
-						Here's an example where that might be important:</p>
-						<div class="example">
-							<h2>저<strong style="color: red;">도</strong> 자동차를 원합니다.</h2>
-							<h3>"I also want a car" <em>(other people might also want a car)</em></h3>
-							<h2>저는 자동차<strong style="color: red;">도</strong> 원합니다.</h2>
-							<h3>"I also want a car" <em>(I might also want other things)</em></h3>
-						</div>
-						<p>Because 도 is placed after the word "car", it means "I want a car, <em>in addition to whatever else I may want</em>, rather than "I want a car, just like you do"
-						<em>(That would be the first sentence)</em>.</p>
-					</div>
-					<p> </p>
-					<p>Let's continue with the conversation:</p>
-					<div class="example">
-						<h2 class="철수"><strong style="color: rgb(248, 24, 148);">김철수:</strong>	하지만 일을 워하지 않습니다. 돈만 원합니다.</h2>
-						<h3>"But I don't want work. I only want money."</h3>
-					</div>
-					<p>하지만 means "But" or "However. It can only be used at the beginning of a sentence, however; It is not a conjunction.</p>
-					<hr>
-					<div class="border">
-						<div class="subtitle">
-							<h2>The Particle 만</h2>
-						</div>
-						<hr>
-						<p>만 means "only", and it works almost exactly the same as 도; it replaces particles and it emphasizes the word it follows.</p>
-						<div class="example">
-							<h2>저<strong style="color: red;">만</strong> 참치를 좋아합니다.</h2>
-							<h3>"Only I want tuna" <em>(nobody else wants it)</em></h3>
-							<h2>저는 참치<strong style="color: red;">만</strong> 좋아합니다.</h2>
-							<h3>"I only want tuna" <em>(I don't want anything else)</em></h3>
-						</div>
-					</div>
-					<div class="example">
-						<h2 class="영희"><strong style="color: rgb(248, 24, 148);">김영희:</strong>	저도 일하고 싶지 않습니다. 게임읗 하고 습니다. </h2>
-						<h3>"I also don't want work. I want to play games."</h3>
-					</div>
-					<hr>
-					<div class="example">
-						<h2 class="철수"><strong style="color: rgb(248, 24, 148);">김철수:</strong>	저도 게임을 하고 싶습니다. 하지민 돈도 벌고 싶습니다.</h2>
-						<h3>"I also want to play games. But I want to earn money too!</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	</body>
+<head>
+    <title>V2 Abbie and Zane Learn Korean</title>
+<style>
+    :root {
+        --backgroundTile: url("data:image/jpeg;base64,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");
+        
+        --primaryColor: hsl(10deg, 100%, 90%);
+        --primaryText: hsl(10deg, 100%, 75%);
+        --tertiaryColor: hsl(10deg, 50%, 90%);
+        --tertiaryText: hsl(10deg, 50%, 60%);
+        --compositeColor: hsl(190deg, 35%, 90%);
+        --compositeText: hsl(190deg, 35%, 50%);
+        
+        --exampleEmphasis: hsl(40deg, 35%, 30%);
+    }
+    
+    body {
+        background: var(--backgroundTile);
+    }
+    
+    img {
+        position: relative;
+        top: 50px;
+        margin-top: 1em;
+        margin-left: 40%;
+        margin-right: 40%;
+        border-radius: 20%;
+        border-width: 20px;
+        border-color: var(--primaryColor);
+        border-style: solid;
+    }
+    
+    ul a {
+        background-color: var(--primaryText);
+        color: var(--primaryColor);
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        border-radius: 5px;
+    }
+    
+    
+    p {
+        font-size: 22px;
+    }
+    
+    h1 {
+        font-size: 45px;
+    }
+    
+    h2 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    h3 {
+        font-size: 25px;
+        line-height: 45px;
+    }
+    
+    hr {
+        color: inherit;
+        border: none;
+    }
+    #navbar {
+        height: 2.5em;
+        width: 100%;
+        background-color: var(--primaryColor);
+        position: fixed;
+        top: 0px;
+        z-index: 3;
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+        border-bottom-color: var(--compositeColor);
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    
+    
+    nav ul {
+        position: fixed;
+        top: -6px;
+    }
+    nav li {
+        display: inline;
+        margin-right: 30px;
+    }
+    
+    .navbutton:hover {
+        transform: scale(2)
+    }
+    
+    .LessonBox {
+        position: relative;
+        top: 50px;
+        background-color: var(--primaryColor);
+        padding: 1.5em 10px 10px 10px;
+        margin-top: 2em;
+        color: var(--primaryText);
+        border-radius: 25px;
+    }
+    
+    .SectionTitle {
+        text-align: center;
+    }
+    
+    .ContentBox {
+        background-color: white;
+        padding: 1em 2em 2em 2em;
+        color: black;
+        border-radius: 25px;
+    }
+    
+    .example {
+        padding: 1em 2em 1em 2em;
+        background-color: var(--tertiaryColor);
+        color: var(--tertiaryText);
+        border-radius: 25px;
+    }
+    
+    .ChapterHead {
+        position: relative;
+        top: 50px;
+        padding: 0.5em 1em 0.5em 1em;
+        background-color: var(--compositeColor);
+        text-align: center;
+        color: var(--compositeText);
+        border-radius: 25px;
+        
+    }
+    
+    .arrow {
+        height: 40px;
+        width: 80px;
+        position: relative;
+        top: 10px;
+        right: 20px;
+        transform: rotate(180deg);
+        display: inline-block;
+        padding: 3px;
+        
+    }
+    
+    .arrow-stem {   
+        background-color: var(--tertiaryText);
+        height: 5px;
+        width: 40px;
+        border-radius: 25px;
+    }
+    
+    .arrow-top {
+        background-color: var(--tertiaryText);
+        height: 20px;
+        width: 5px;
+        border-radius: 25px;
+        position: relative;
+        top: 7px;
+        left: 5px;
+        transform: rotate(45deg);
+        
+    }
+    
+    .arrow-bottom {
+        background-color: var(--tertiaryText);
+        height: 20px;
+        width: 5px;
+        border-radius: 25px;
+        position: relative;
+        top: -7px;
+        left: 5px;
+        transform: rotate(-45deg);
+    }
+    
+</style>
+</head>
+<body>
+    <a id="top"></a>
+    <div id="navbar">
+        <nav>
+            <ul>
+                <li><a href="#Chapter4" class="navbutton">Chapter 4</a></li>
+                <li><a href="#Chapter5" class="navbutton">Chapter 5</a></li>
+                <li><a href="#top" class="navbutton">Back to Top</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="ChapterHead" id="Chapter4">
+        <h1>Chapter 4: Wanting and Not Wanting</h1>
+    </div>
+    <img src="data:image/jpeg;base64,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">
+    <div class="LessonBox">
+        <h1 class="SectionTitle" id="placeholder"> Chapter Conversation </h1>
+        <div class="ContentBox">
+            <p>This is the conversation for this chapter. Don't worry if you can't understand it yet! That's what this chapter is for!</p>
+            <div class="example">
+                <h2>김철수:	저는 아르바이트를 원합니다.</h2>
+                <h2>김영희:	저도 아르바이트를 원합니다.</h2>
+                <h2>김철수:	하지만 일을 원하지 않습니다. 돈만 원합니다.</h2>
+                <h2>김영희:	저도 일하고 싶지 않습니다. 게임을 하고 싶습니다. </h2>
+                <h2>김철수:	저도 게임을 하고 싶습니다. 하지민 돈도 벌고 싶습니다.</h2>
+            </div>
+            <p>We'll be putting a pin in this conversation for now as we learn some really useful grammar in the next few sections. <strong>Don't worry</strong>! We'll cycle back around soon enough!
+        </div>
+    </div>
+    <div class="LessonBox">
+        <h1 class="SectionTitle" id="TwoWants"> A Tale of Two Wants </h1>
+        <h2 class="SectionTitle" id="TwoWantsSubtitle"><em>(and other such needless poetry)</em></h2>
+        <div class="ContentBox">
+            <p>한극어 has two ways to say "want". They are:</p>
+            <div class="example">
+                <h2>원합니다</h2>
+                <h2>and</h2>
+                <h2>-고 싶습니다</h2>
+            </div>
+            <p> So, how do you know which to use ? Well that's where the title comes in. One of these:</p>
+            <div class="example">
+                <h2>원헙니다</h2>
+            </div>
+            <p>is ultra poetic. It sourds very literary and dramatic. While we <em>will</em> go over how to use it, it shouldn't be focused on. Unless you're demanding world peace or pining after a lost love, you'll never use it! For more natural sounding korean, you should try to make</p>
+            <div class="example">
+                <h2>-고 싶습니다</h2>
+            </div>
+            <p>work for you by adding the appropriate verb. We'll discuss how to do that in some upcoming sections, but first we have to be familiar with <strong>Verb Stems</strong>.</p>
+        </div>
+    </div>
+    <div class="LessonBox">
+        <h1 class="SectionTitle" id="VerbStems"> What the heck is a verb stem ? </h1>
+        <div class="ContentBox">
+            <p>They're not as scary as they sound. They're actually super easy. Have you noticed that our vebrs aways tend to end in -다 ?</p>
+            <div class="example">
+                <h2>입니<em>다</em></h2>
+                <h2>반갑습니<em>다</em></h2>
+                <h2>좋아합니<em>다</em></h2>
+            </div>
+            <p>If you want the verb stem, just take off the -다! Here are some examples with verbs we already know!</p>
+            <div class=example>
+                <h2>입니<em>다</em>
+                    <div class="arrow">
+                        <div class="arrow-top"></div>
+                        <div class="arrow-stem"></div>
+                        <div class="arrow-bottom"></div>
+                    </div>    
+                    입니-</h2>
+                <h2>반갑습니<em>다</em>
+                    <div class="arrow">
+                        <div class="arrow-top"></div>
+                        <div class="arrow-stem"></div>
+                        <div class="arrow-bottom"></div>
+                    </div>
+                        반갑습니-</h2>
+                <h2>좋아합니<em>다</em> 
+                    <div class="arrow">
+                        <div class="arrow-top"></div>
+                        <div class="arrow-stem"></div>
+                        <div class="arrow-bottom"></div>
+                    </div>    
+                    좋아합니-</h2>
+            </div>
+            <p>These are our verb stems. They're called stems because, like the stem of a plant, they generally need to be attached to something else. In our case, a new ending. We'll get the first of these in our next section, where we finally cover how to use -고 싶습니다!</p>
+            
+        </div>
+    </div>
+    <div class="LessonBox">
+        <h1 class="SectionTitle" id="고-싶습니다"> -고 싶습니다 </h1>
+        <div class="ContentBox">
+            <p>With everything we know know, constructing this next phrase is super simple! Just take your verb stem and "plant" it right on the beginning of -고 싶습니다. Remember though, when doing these, take it slowly. Find the verb stem first, and then attach. This will become very easy in time, but <em>trying to rush now will only be frustrating</em>! In this example, we'll use the verb stems we found in the last example.</p>
+            <div class="example">
+                <h2>입니고 십습니다</h2>
+                <h3>"(I) want to be..."</h3>
+                <hr>
+                <h2>반갑습니고 십습니다</h2>
+                <h3>"(I) want to meet...</h3>
+                <hr>
+                <h2>좋아합니고 십습니다</h2>
+                <h3>"(I) want to like..."</h3>
+            </div>
+            <p> In the translations, the word "I" is wrapped in parenthesis only because there is no pronoun. Without one, the same sentence could mean "you want", "s/he wants", "They want" ect. I'd recommend staring at that until it feels a little intuitive. Play around with running through the process with our example verbs, and then try a few of your own.</p>
+            <hr>
+            <p> It's also worth mentioning that, at this point, you can totally throw some nouns and pronouns into the sentence if it makes sense.</p>
+            <div class="example">
+                <h2>조극 고양이를 입니고 십습니다</h2>
+                <h3>"I want to be a cat"</h3>
+                <hr>
+                <h2>조극 고양이를 반갑습니고 십습니다</h2>
+                <h3>"I want to meet a cats"</h3>
+                <hr>
+                <h2>조극 고양이를 좋아합니고 십습니다</h2>
+                <h3>"I want to like cats"</h3>
+            </div>
+            <p>고양이! CATS! 고양이! CATS! 고양이! CATS! 고양이! CATS!</p>
+        </div>
+    </div>
+    <div class="LessonBox">
+        <h1 class="SectionTitle" id="placeholder"> 원합니다 </h1>
+        <div class="ContentBox">
+            <p>원합니다 is, comparatively, much simpler. It's also nearly useless for conversation. Still, we should know how it works: To use 원합니다, just treat it like any other verb. Take your noun <em>(with 를/을 attached!)</em> and plop in front, as per the S.O.V word order of korean.</p>
+            <div class="example">
+                <h2>조극 컴퓨터를 원합니다</h2>
+                <h3>"I want a computer"</h3>
+                <hr>
+                <h2>조극 점심을 원합니다</h2>
+                <h3>"I want lunch"</h3>
+                <hr>
+                <h2>조극 고양이를 원합니다</h2>
+                <h3>"I want cats"</h3>
+            </div>
+            <p>Try not to to use this one, really. All of the above has a connotation that you're talking about your purpose in life and, apart from that last one anyway, these are all totally innapropriote uses. Revert back to using it if it's the only way you know to say something, just know you might get weird looks for it.</p>
+        </div>
+    </div>
+    <div class="LessonBox">
+        <h1 class="SectionTitle" id="placeholder"> Getting more natual sounding 한국어 with </h1>
+        <h1 class="SectionTitle" id="placeholder"> -고 싶습니다 </h1>
+        <div class="ContentBox">
+            <p>So, based on what we've learned about each of our wants, you might notice that -고 싶습니다 only works with verbs while 원합니다 only works with nouns. This is true. So, how are we supposed to avoid 원합니다 when say simple things like "I want a house" ?</p>
+            <hr>
+            <p>Well, native korean speakers just insert whatever relevant verb that would allow them to use -고 십습니다.</p>
+            <div class="example">
+                <h3>"I want a house" might become "I want <em>to buy</em> a house."</h3>
+                <h3>"I want a cat" might become "I want <em>to find</em> a cat."</h3>
+            </div>
+            <p>And so on. It's actually pretty simple to do before translating a sentetence, it just means knowing a variety of verbs is a bit more important early on in korean than in other languages.</p> 
+        </div>
+    </div>
+    <div class="LessonBox">
+        <h1 class="SectionTitle" id="placeholder"> Getting more natual sounding 한국어 with </h1>
+        <h1 class="SectionTitle" id="placeholder"> -고 싶습니다 </h1>
+        <div class="ContentBox">
+            <p>placeholder</p>
+        </div>
+    </div>
+    <div class="LessonBox">
+        <h1 class="SectionTitle" id="placeholder"> Getting more natual sounding 한국어 with </h1>
+        <h1 class="SectionTitle" id="placeholder"> -고 싶습니다 </h1>
+        <div class="ContentBox">
+            <p>placeholder</p>
+        </div>
+    </div>
+    <div class="LessonBox">
+        <h1 class="SectionTitle" id="placeholder"> Getting more natual sounding 한국어 with </h1>
+        <h1 class="SectionTitle" id="placeholder"> -고 싶습니다 </h1>
+        <div class="ContentBox">
+            <p>placeholder</p>
+        </div>
+    </div>
+    <div class="LessonBox">
+        <h1 class="SectionTitle" id="placeholder"> Getting more natual sounding 한국어 with </h1>
+        <h1 class="SectionTitle" id="placeholder"> -고 싶습니다 </h1>
+        <div class="ContentBox">
+            <p>placeholder</p>
+        </div>
+    </div>
+</body>
 </html>
